@@ -1,24 +1,24 @@
 #include<stdio.h>
 #include<stdbool.h>
 
-bool isPrime(int x)
+bool isPrime(int n)
 {
-    for(int i=2; i<x; i++)
+    for(int i=2; i<n; i++)
     {
-        if(x%i == 0)
+        if(n%i==0)
             return false;
     }
     return true;
-    
 }
 
 int main()
 {
-    int n;
+    int x;
     printf("Enter a number : ");
-    scanf("%d", &n);
-    if(isPrime(n))
-        printf("It is prime\n");
+    scanf("%d", &x);
+    if(isPrime(x))
+        printf("It is a prime\n");
     else 
         printf("It is not prime\n");
+    return 0;
 }
